@@ -1,13 +1,20 @@
 {
   "name": "magister-scraper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Magister 6 Scraper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrValk/magister-scraper-fixed.git"
+  },
+  "keywords": [
+    "magister",
+    "scraper"
+  ],
   "author": "niek-peters",
   "license": "ISC",
   "dependencies": {
