@@ -1,8 +1,7 @@
-# Magister scraper
+# magister-scraper
 
-This is my TS library for scraping Magister.
-
-The biggest thanks goes to [RedDuckss](https://github.com/redduckss/) for helping me out with researching the endpoints and such. I couldn't have done it without him.
+This is a fixed version of [JipFr's magister-scraper](https://github.com/JipFr/magister-scraper/).
+Now also includes error messages that indicate incorrect username, password or hostname
 
 ---
 
@@ -15,17 +14,17 @@ Getting your schedule would look something like this
 ```js
 import Magister from "magister";
 
-(async () => {
-	let client = await Magister.new({
-		username: "jouw_id",
-		password: "jouw_wachtwoord",
-		hostname: "school.magister.net"
-	});
+async function run() {
+  let client = await Magister.new({
+    username: "jouw_id",
+    password: "jouw_wachtwoord",
+    hostname: "school.magister.net",
+  });
 
-	let url = `https://${client.hostname}/api/personen/${client.userId}/afspraken`;
-	let data = await client.get(url);
+  let url = `https://${client.hostname}/api/personen/${client.userId}/afspraken`;
+  let data = await client.get(url);
 
-	console.info(data);
-
-})();
+  console.info(data);
+}
+run();
 ```
