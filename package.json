@@ -1,6 +1,6 @@
 {
   "name": "magister-scraper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Magister 6 Scraper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrValk/magister-scraper-fixed.git"
+    "url": "github:MrValk/magister-scraper-fixed"
   },
   "keywords": [
     "magister",
