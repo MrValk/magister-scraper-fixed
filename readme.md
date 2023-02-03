@@ -12,7 +12,7 @@ This library handles login in and sending GET requests with the relevant cookies
 Getting your schedule would look something like this
 
 ```js
-import Magister from "magister-scraper";
+import { Magister } from "magister-scraper";
 
 async function run() {
   let client = await Magister.new({

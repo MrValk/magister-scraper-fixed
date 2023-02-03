@@ -30,7 +30,7 @@ function genUrl(base: string, params = {}) {
   return items.length > 0 ? `${base}?${items.join("&")}` : base;
 }
 
-export default class Magister {
+export class Magister {
   // Lots of basic types...
   public authority: string;
   public hostname: string;
